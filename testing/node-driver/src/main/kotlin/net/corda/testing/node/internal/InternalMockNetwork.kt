@@ -616,7 +616,7 @@ private fun mockNodeConfiguration(certificatesDirectory: Path): NodeConfiguratio
         doReturn(5.seconds.toMillis()).whenever(it).additionalNodeInfoPollingFrequencyMsec
         doReturn(null).whenever(it).devModeOptions
         doReturn(NetworkParameterAcceptanceSettings()).whenever(it).networkParameterAcceptanceSettings
-        doReturn(2).whenever(it).flowBackgroundProcessThreadPoolSize
+        doReturn(2).whenever(it).flowExternalOperationThreadPoolSize
     }
 }
 
